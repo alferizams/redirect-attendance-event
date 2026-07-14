@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengalihkan...</title>
+
+    <script>
+        // --- 1. ATUR VARIABEL LINK TUJUAN DI SINI ---
+        const urlTujuan = "https://pichunter-makes-fig-concerts.trycloudflare.com";
+        const jedaWaktu = 0; // dalam detik (0 = instan)
+
+        // --- 2. Proses Redirect Otomatis ---
+        setTimeout(function() {
+            window.location.href = urlTujuan;
+        }, jedaWaktu * 1000);
+    </script>
+</head>
+<body>
+    
+    <p>Jika Anda tidak dialihkan secara otomatis, <a id="linkCadangan" href="#">klik di sini</a>.</p>
+
+    <script>
+        // --- 3. Mengisi link cadangan di atas menggunakan variabel ---
+        document.getElementById("linkCadangan").href = urlTujuan;
+    </script>
+
+</body>
+</html>
