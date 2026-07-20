@@ -7,7 +7,14 @@
 
     <script>
         // --- 1. ATUR VARIABEL LINK TUJUAN DI SINI ---
-        const urlTujuan = "https://coaching-finger-valium-jim.trycloudflare.com";
+        const urlDasar = "https://coaching-finger-valium-jim.trycloudflare.com/voting";
+        
+        // Mengambil semua parameter di belakang tanda tanya (?) dari URL saat ini
+        const parameterQuery = window.location.search; 
+
+        // Menggabungkan URL dasar dengan parameter yang dibawa
+        const urlTujuan = urlDasar + parameterQuery;
+
         const jedaWaktu = 0; // dalam detik (0 = instan)
 
         // --- 2. Proses Redirect Otomatis ---
